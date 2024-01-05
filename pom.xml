@@ -463,6 +463,11 @@
 	</dependencies>
 
 	<repositories>
+    <repository>
+			<id>central</id>
+			<name>Maven Central</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+    </repository>
 		<!-- Sonatype snapshot repo -->
 		<repository>
 			<id>oss-sonatype</id>
@@ -472,11 +477,11 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		<repository>
+		<!-- <repository>
 			<id>spring-releases</id>
 			<name>Spring Releases</name>
 			<url>https://repo.spring.io/libs-release</url>
-		</repository>
+		</repository> -->
 		<!-- Milestone repo -->
 		<repository>
 			<id>spring-milestone</id>
@@ -492,10 +497,14 @@
 
 	<pluginRepositories>
 		<pluginRepository>
+			<id>mavencentral</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+    </pluginRepository>
+		<!-- <pluginRepository>
 			<id>spring-releases</id>
 			<name>Spring Releases</name>
 			<url>https://repo.spring.io/libs-release</url>
-		</pluginRepository>
+		</pluginRepository> -->
 	</pluginRepositories>
 
 	<build>
